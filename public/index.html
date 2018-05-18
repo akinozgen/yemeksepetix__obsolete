@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>yemeksepetix</title>
+	<meta charSet="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<meta name="description" content="YemeksepetiX sizi seçmekle uğraştırmaz. ">
+	<meta property="og:image" content="">
+	<link rel="shortcut icon" href="static/favicon.svg" />
+	<link rel="icon" href="static/favicon.png">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" charset="UTF-8" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css"
+	/>
+	<link rel="stylesheet" href="static/AllTemplates.min.css">
+	<style>
+		@font-face {
+			font-family: 'Alba';
+			src: url('static/alba/Alba.ttf.woff') format('woff'),
+			url('static/alba/Alba.ttf.svg#Alba') format('svg'),
+			url('static/alba/Alba.ttf.eot'),
+			url('static/alba/Alba.eot?#iefix') format('embedded-opentype');
+			font-weight: normal;
+			font-style: normal;
+		}
+
+		.launchaco-promo {
+			position: fixed;
+			bottom: 20px;
+			left: 20px;
+			cursor: pointer;
+			width: 0;
+			height: 0;
+			z-index: 999999;
+		}
+
+		.launchaco-promo__active {
+			width: initial;
+			height: initial;
+		}
+
+		.launchaco-promo-speechbubble {
+			font-family: -apple-system, BlinkMacSystemFont, Roboto, "Open Sans", "Helvetica Neue", sans-serif;
+			position: absolute;
+			left: 50px;
+			top: -11px;
+			padding: 9px;
+			color: white;
+			border-radius: 3px;
+			background: linear-gradient(#227ef7, #1290fc);
+			font-size: 14px;
+			font-weight: 600;
+			width: 93px;
+			box-sizing: border-box;
+			opacity: 0;
+			pointer-events: none;
+			transition: opacity .15s ease-in-out;
+		}
+
+		.launchaco-promo__active:hover .launchaco-promo-speechbubble {
+			opacity: 1;
+		}
+
+		.launchaco-promo svg {
+			transition: all .3s ease-in-out;
+			opacity: 0;
+		}
+
+		.launchaco-promo__active svg {
+			opacity: 1;
+		}
+
+		.launchaco-promo-speechbubble:before {
+			content: "";
+			width: 10px;
+			height: 10px;
+			transform: rotate(45deg);
+			left: -4px;
+			bottom: 10px;
+			border-radius: 3px;
+			background: #1290fc;
+			z-index: 2;
+			position: absolute
+		}
+
+		.launchaco-promo__active .launchaco-promo-speechbubble__animate {
+			animation: popinpopup 3s linear forwards 0.1s;
+		}
+
+		@keyframes popinpopup {
+			0% {
+				opacity: 0;
+				transform: translate3d(0, 3px, 0)
+			}
+			7%,
+			93% {
+				opacity: 1;
+				transform: translate3d(0, 0, 0)
+			}
+			100% {
+				opacity: 0;
+				transform: translate3d(0, -4px, 0)
+			}
+		}
+
+		.launchaco-promo-animate:hover {
+			opacity: 1 !important;
+		}
+
+		.red-white .secondary-bg,
+		icon {
+			background: transparent;
+		}
+
+		.button:hover img {
+			-webkit-animation: jump .85s ease 0s infinite normal;
+			animation: jump .85s ease 0s infinite normal;
+		}
+
+		@-webkit-keyframes jump {
+			0% {
+				-webkit-transform: translateY(0);
+				transform: translateY(0);
+			}
+			20% {
+				-webkit-transform: translateY(0);
+				transform: translateY(0);
+			}
+			40% {
+				-webkit-transform: translateY(-10px);
+				transform: translateY(-10px);
+			}
+			50% {
+				-webkit-transform: translateY(0);
+				transform: translateY(0);
+			}
+			60% {
+				-webkit-transform: translateY(-5px);
+				transform: translateY(-5px);
+			}
+			80% {
+				-webkit-transform: translateY(0);
+				transform: translateY(0);
+			}
+			100% {
+				-webkit-transform: translateY(0);
+				transform: translateY(0);
+			}
+		}
+
+		@keyframes jump {
+			0% {
+				transform: translateY(0);
+			}
+			20% {
+				transform: translateY(0);
+			}
+			40% {
+				transform: translateY(-10px);
+			}
+			50% {
+				transform: translateY(0);
+			}
+			60% {
+				transform: translateY(-5px);
+			}
+			80% {
+				transform: translateY(0);
+			}
+			100% {
+				transform: translateY(0);
+			}
+		}
+
+		.logo img {
+			cursor: pointer;
+			transition: all .3s ease;
+		}
+
+		.logo:hover img {
+			transform: translateY(-5px);
+		}
+
+		.team-card {
+			position: relative;
+		}
+
+		.user-image {
+			width: 150px;
+			height: 150px;
+
+			transition: all .3s ease-in-out;
+		}
+
+		.user-image:hover {
+			width: 100%;
+			border-radius: 0;
+			height: 250px;
+		}
+	</style>
+</head>
+
+<body class="font-friendly">
+	<div id="root"></div>
+</body>
+
+</html>

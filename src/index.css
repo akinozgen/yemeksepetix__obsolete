@@ -1,0 +1,24 @@
+.branding-name {
+  font-family: "Alba";
+  font-weight: normal;
+  letter-spacing: 1px;
+}
+
+.lh30 {
+  line-height: 30px;
+}
+
+.button-icon {
+  width: 30px;
+  display: block;
+  float: left;
+  margin-right: 5px;
+}
+
+.avatar {
+  background-image: url("https://cdn.launchaco.com/images/50939c2b-e504-4a3d-bcf9-66a526d7d91c.jpg");
+}
+
+.pd20 {
+  padding: 30px;
+}

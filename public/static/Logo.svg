@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-354 -129 5992 1590">
+  <defs>
+    <style>
+      .cls-1 {
+        clip-path: url(#clip-Logo);
+      }
+
+      .cls-2, .cls-4 {
+        fill: #e41e35;
+      }
+
+      .cls-2 {
+        stroke: #707070;
+      }
+
+      .cls-3, .cls-7 {
+        fill: #fff;
+      }
+
+      .cls-3 {
+        font-size: 800px;
+      }
+
+      .cls-3, .cls-4 {
+        font-family: Alba;
+      }
+
+      .cls-4 {
+        font-size: 700px;
+      }
+
+      .cls-5 {
+        stroke: none;
+      }
+
+      .cls-6 {
+        fill: none;
+      }
+	  @font-face {
+			font-family: 'Alba';
+			src:  url('alba/Alba.ttf.woff') format('woff'),
+			url('alba/Alba.ttf.svg#Alba') format('svg'),
+			url('alba/Alba.ttf.eot'),
+			url('alba/Alba.eot?#iefix') format('embedded-opentype'); 
+			font-weight: normal;
+			font-style: normal;
+		}
+    </style>
+    <clipPath id="clip-Logo">
+      <rect x="-354" y="-129" width="5992" height="1590"/>
+    </clipPath>
+  </defs>
+  <g id="Logo" class="cls-1">
+    <rect class="cls-7" x="-354" y="-129" width="5992" height="1590"/>
+    <g id="Rectangle_1" data-name="Rectangle 1" class="cls-2" transform="translate(-104 75)">
+      <rect class="cls-5" width="1148" height="1148" rx="150"/>
+      <rect class="cls-6" x="0.5" y="0.5" width="1147" height="1147" rx="149.5"/>
+    </g>
+    <text id="y" class="cls-3" transform="translate(30 866)"><tspan x="0" y="0">y</tspan></text>
+    <text id="x" class="cls-3" transform="translate(470 698)"><tspan x="0" y="0">x</tspan></text>
+    <text id="yemeksepetiX" class="cls-4" transform="translate(1229 839)"><tspan x="0" y="0">yemeksepetiX</tspan></text>
+  </g>
+</svg>

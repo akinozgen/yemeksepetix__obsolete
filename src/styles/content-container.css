@@ -1,0 +1,70 @@
+.content-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.content-container .filters {
+  flex-grow: 1;
+  max-width: 30%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  min-width: 35%;
+  max-width: 35%;
+}
+
+.content-container .filters h4 {
+  margin-bottom: 10px;
+  opacity: 0.6;
+}
+
+.content-container .filters .slider,
+.content-container .filters .shuffle {
+  padding: 10px;
+}
+
+.content-container .menu-gallery {
+  flex-grow: 2.5;
+  margin-left: 50px;
+}
+
+.content-container .filters .slider h4,
+.content-container .filters .shuffle h4 {
+  opacity: 0.6;
+  margin-left: -5px;
+  margin-bottom: 15px;
+  margin-top: 20px;
+}
+
+.content-container .filters .slider button,
+.content-container .filters .shuffle button {
+  background: #193031;
+  color: white;
+  width: 100%;
+}
+
+.content-container .filters .shuffle h4 {
+  margin-top: 0;
+  padding-left: 10px;
+  margin-bottom: 0;
+}
+
+.content-container .filters .shuffle {
+  padding: 10px 0 30px 0;
+}
+
+.content-container .filters .slider input {
+  text-indent: 10px;
+  border: none;
+  background: transparent;
+  padding: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  margin: 0 -5px;
+  width: 100%;
+}
+
+* {
+  min-height: 0;
+  min-width: 0;
+}

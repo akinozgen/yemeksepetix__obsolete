@@ -1,0 +1,65 @@
+.restaurant-list {
+  width: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  list-style-type: none;
+  border-radius: 5px;
+}
+
+.restaurant-list .list {
+  overflow: hidden;
+  max-height: 240px;
+  overflow-y: scroll;
+}
+
+.restaurant-list::-webkit-scrollbar {
+  width: 5px;
+  height: 8px;
+  background-color: transparent;
+}
+
+.restaurant-list::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+}
+
+.restaurant-list li {
+  background: linear-gradient(#ffffff, #fafafa);
+  cursor: pointer;
+  line-height: 40px;
+  text-indent: 20px;
+  font-size: 14px;
+  position: relative;
+  white-space: nowrap;
+}
+
+.restaurant-list li:before {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 30px;
+  background: linear-gradient(#ffffff, #fafafa);
+}
+
+.restaurant-list .search {
+  padding: 0;
+  line-height: initial;
+  display: flex;
+  cursor: default;
+  align-items: flex-start;
+  justify-content: space-between;
+  background: linear-gradient(#f3f3f3, #f3f2f2);
+}
+
+.restaurant-list .search input {
+  text-indent: 10px;
+  border: none;
+  background: transparent;
+  padding: 10px;
+  flex-grow: 1;
+}
+
+.restaurant-list .search:before {
+  display: none;
+}
