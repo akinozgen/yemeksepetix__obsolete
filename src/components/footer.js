@@ -28,6 +28,14 @@ export default () => (
           {" "}
         </a>
         <a
+          href="https://github.com/akinozgen/yemeksepetix"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="socialicons accent-bg github"
+        >
+          {" "}
+        </a>
+        <a
           href="mailto:akinozgen17@outlook.com"
           target="_blank"
           rel="noopener noreferrer"

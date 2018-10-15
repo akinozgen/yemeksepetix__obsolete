@@ -9,7 +9,7 @@ export default () => (
           to="/"
           className="logo primary-color launchaco-builder-hoverable logo"
         >
-          <img src="static/logo.png" alt="yemeksepetiX" />
+          <img src="static/logo.png" alt="yemekX" />
         </Link>
         <a
           href="mailto:akinozgen17@outlook.com"
