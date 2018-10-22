@@ -1,7 +1,7 @@
 export default city => {
   return new Promise((resolve, reject) => {
     fetch(
-      `https://us-central1-yemeksepetix-api.cloudfunctions.net/app/regions/${
+      `https://yemekx-api.herokuapp.com/regions/${
         city.key
       }`
     )
