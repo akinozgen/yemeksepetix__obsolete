@@ -12,8 +12,8 @@ export default class Home extends React.Component {
             <div className="container mb40">
               <div className="col-12 text-center">
                 <h1 className="heading-lrg primary-color launchaco-builder-hoverable">
-                  <span className="branding-name">yemekX</span> sizi seçmekle
-                  uğraştırmaz.{" "}
+                  <span className="branding-name"> yemekX </span> sizi seçmekle
+                  uğraştırmaz.
                 </h1>
                 <h2 className="subheading secondary-color mt20 launchaco-builder-hoverable">
                   Rastgele bir yemek öneri zinciri ile yemek seçme sürecini
@@ -78,7 +78,7 @@ export default class Home extends React.Component {
                 Seç.
               </h3>
               <p className="paragraph secondary-color launchaco-builder-hoverable">
-                Rastgele öneri zincirinden bir yemek seç. Sende bizim gibi
+                Rastgele öneri zincirinden bir yemek seç.Sende bizim gibi
                 acıktığında ne söylesek girdabına düşüp aç kalanlardansan
                 kullanmaya başla.
               </p>
@@ -94,7 +94,7 @@ export default class Home extends React.Component {
                 Beğen
               </h3>
               <p className="paragraph secondary-color launchaco-builder-hoverable">
-                Beğenene kadar öneri zincirinde ilerle. Beğenmezsen tekrar dene.
+                Beğenene kadar öneri zincirinde ilerle.Beğenmezsen tekrar dene.
               </p>
             </div>
             <div className="col-4 text-center flex flex-column center-horizontal">
@@ -108,7 +108,7 @@ export default class Home extends React.Component {
                 Gerisi Bildiğin Gibi
               </h3>
               <p className="paragraph secondary-color launchaco-builder-hoverable">
-                Gerisini yemeksepeti üzerinde devam edeceksin. Biz sadece öneri
+                Gerisini yemeksepeti üzerinde devam edeceksin.Biz sadece öneri
                 yapıyoruz.
               </p>
             </div>
@@ -148,7 +148,7 @@ export default class Home extends React.Component {
                 Fiyatlandırma
               </h4>
               <p className="subheading secondary-color mt20 launchaco-builder-hoverable">
-                Ne fiyatı bir de para mı alacağız?
+                Ne fiyatı bir de para mı alacağız ?
               </p>
             </div>
           </div>
@@ -157,9 +157,9 @@ export default class Home extends React.Component {
               <div className="card pad30 launchaco-builder-hoverable">
                 <div className="mb20">
                   <div className="text-center">
-                    <b className="bold primary-color">Bedava</b>
+                    <b className="bold primary-color"> Bedava </b>
                     <div className="mt10">
-                      <b className="heading primary-color">0₺</b>
+                      <b className="heading primary-color"> 0₺ </b>
                       <span className="paragraph secondary-color" />
                     </div>
                   </div>
@@ -177,7 +177,7 @@ export default class Home extends React.Component {
                         </g>
                       </svg>
                       <span className="span secondary-color">
-                        Türkiye'deki listelenen tüm restoranlar
+                        Türkiye 'deki listelenen tüm restoranlar
                       </span>
                     </li>
                     <li className="flex mb20">
@@ -193,7 +193,7 @@ export default class Home extends React.Component {
                         </g>
                       </svg>
                       <span className="span secondary-color">
-                        Limitsize yakın öneri zinciri (tabi ki bir limiti var)
+                        Limitsize yakın öneri zinciri(tabi ki bir limiti var)
                       </span>
                     </li>
                     <li className="flex mb20">
@@ -255,10 +255,10 @@ export default class Home extends React.Component {
         >
           <div className="container text-center mb75">
             <h3 className="heading primary-color launchaco-builder-hoverable">
-              Siz Kimsiniz?
+              Siz Kimsiniz ?
             </h3>
             <p className="subheading secondary-color mt20 launchaco-builder-hoverable">
-              Ya da ben kimim?
+              Ya da ben kimim ?
             </p>
           </div>
           <div className="container-sml flex text-center">
@@ -266,10 +266,14 @@ export default class Home extends React.Component {
               <div className="team-card flex flex-column center-vertical center-horizontal w100">
                 <div className="user-image mb20 avatar" />
                 <div>
-                  <b className="bold primary-color">Akın Özgen</b>
-                  <p className="paragraph primary-color mt10">Front-End Developer (Antalya)</p>
+                  <b className="bold primary-color"> Akın Özgen </b>
+                  <p className="paragraph primary-color mt10">
+                    Front - End Developer(Antalya)
+                  </p>
                   <p className="paragraph secondary-color mt20">
-                  8 yıllık kod yazıcısı 2 yıldır profesyonel yazılım geliştiricisi. Yüksek okul mezunu, askerliği kısaltmak için açık öğretim öğrencisi Şimdilik bu kadar
+                    8 yıllık kod yazıcısı 2 yıldır profesyonel yazılım
+                    geliştiricisi.Yüksek okul mezunu, askerliği kısaltmak için
+                    açık öğretim öğrencisi Şimdilik bu kadar
                   </p>
                 </div>
                 <div className="mt30">
@@ -278,33 +282,25 @@ export default class Home extends React.Component {
                     target="_blank"
                     rel="noopener noreferrer"
                     className="socialicons accent-bg twitter"
-                  >
-                    {" "}
-                  </a>
+                  />
                   <a
                     href="https://medium.com/@akinozgen"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="socialicons accent-bg medium"
-                  >
-                    {" "}
-                  </a>
+                  />
                   <a
                     href="https://github.com/akinozgen"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="socialicons accent-bg github"
-                  >
-                    {" "}
-                  </a>
+                  />
                   <a
                     href="https://linkedin.com/in/akinozgen"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="socialicons accent-bg linkedin"
-                  >
-                    {" "}
-                  </a>
+                  />
                 </div>
               </div>
             </div>

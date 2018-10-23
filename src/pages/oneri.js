@@ -46,15 +46,23 @@ export default class Oneri extends React.Component {
   }
 
   async getRestaurants() {
-    const restaurants = await getRestaurants(
-      this.state.selectedCity,
-      this.state.selectedRegion
-    );
+    try {
+      const restaurants = await getRestaurants(
+        this.state.selectedCity,
+        this.state.selectedRegion
+      );
 
-    this.setState({
-      restaurants: JSON.parse(htmlDecode(JSON.stringify(restaurants)))
-    });
-    this.getMenus();
+      this.setState({
+        restaurants: JSON.parse(htmlDecode(JSON.stringify(restaurants)))
+      });
+      this.getMenus();
+    } catch (exception) {
+      if (exception.message === "Failed to fetch") {
+        this.setState({
+          restaurants: "Failed to fetch"
+        });
+      }
+    }
   }
 
   shuffle(a) {

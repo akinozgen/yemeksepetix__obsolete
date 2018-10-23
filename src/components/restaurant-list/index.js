@@ -20,7 +20,9 @@ export default class RestaurantList extends React.Component {
   }
 
   renderRestaurants() {
-    if (this.props.restaurants.length > 0) {
+    if (this.props.restaurants === "Failed to fetch") {
+      return <li>Açık Restoran Yok</li>;
+    } else if (this.props.restaurants.length > 0) {
       return this.props.restaurants
         .filter(x =>
           x.displayname.toLowerCase().includes(this.state.query.toLowerCase())

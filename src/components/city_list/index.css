@@ -3,7 +3,12 @@
   border: 1px solid rgba(0, 0, 0, 0.1);
   list-style-type: none;
   border-radius: 5px;
-  overflow: hidden;
+}
+
+.cities-inner {
+  overflow-y: auto;
+  overflow-x: hidden;
+  max-height: 500px;
 }
 
 .cities li {

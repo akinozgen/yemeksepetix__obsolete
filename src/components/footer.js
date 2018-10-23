@@ -1,16 +1,11 @@
 import React from "react";
 
 export default () => (
-  <footer
-    id="footer-4"
-    className="section text-center red-flat"
-    sitemeta="[object Object]"
-    activepage="Landing"
-  >
+  <footer id="footer-4" className="section text-center red-flat">
     <div className="container col-12">
       <nav className="mb50">
         <a
-          href="https://www.arayan.com/gpltr"
+          href="https://linux.org.tr/gpl/"
           target="_blank"
           rel="noopener noreferrer"
           className="nav-link secondary-color"
@@ -24,25 +19,19 @@ export default () => (
           target="_blank"
           rel="noopener noreferrer"
           className="socialicons accent-bg twitter"
-        >
-          {" "}
-        </a>
+        />
         <a
           href="https://github.com/akinozgen/yemeksepetix"
           target="_blank"
           rel="noopener noreferrer"
           className="socialicons accent-bg github"
-        >
-          {" "}
-        </a>
+        />
         <a
           href="mailto:akinozgen17@outlook.com"
           target="_blank"
           rel="noopener noreferrer"
           className="socialicons accent-bg email"
-        >
-          {" "}
-        </a>
+        />
       </div>
     </div>
   </footer>

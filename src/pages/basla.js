@@ -24,13 +24,22 @@ export default class Basla extends React.Component {
   }
 
   async getCities() {
-    let cities = await getCities();
+    try {
+      let cities = await getCities();
 
-    if (cities.length > 20) {
-      cities = JSON.parse(htmlDecode(JSON.stringify(cities)));
+      if (cities.length > 20) {
+        cities = JSON.parse(htmlDecode(JSON.stringify(cities)));
+      }
+
+      this.setState({ cities });
+    } catch (exception) {
+      if (exception.message === "Failed to fetch") {
+        alert(
+          "Maalesef sunucumuz çöktü 😢 Meraklanmayın swat ekiplerimiz şu anda bu konuyla ilgileniyor. 10 dakikaya düzelmiş olur."
+        );
+        this.setState({ selectCity: undefined });
+      }
     }
-
-    this.setState({ cities });
   }
 
   searchInputChanged(query) {
@@ -56,7 +65,12 @@ export default class Basla extends React.Component {
           <br />
         </div>
 
-        <Hero>Yaşadığın şehri seçerek başlayabilirsin...</Hero>
+        <Hero>
+          Yaşadığın şehri seçerek başlayabilirsin...
+          <small>
+            Bağlantı hızınıza bağlı olarak yükleme biraz zaman alabilir
+          </small>
+        </Hero>
 
         <section className="section">
           <div className="container-lrg">
@@ -70,11 +84,13 @@ export default class Basla extends React.Component {
                   placeholder="Ara.."
                 />
               </li>
-              <CityList
-                cities={this.state.cities}
-                query={this.state.query}
-                selectCity={this.selectCity}
-              />
+              <div className="cities-inner">
+                <CityList
+                  cities={this.state.cities}
+                  query={this.state.query}
+                  selectCity={this.selectCity}
+                />
+              </div>
             </ul>
           </div>
         </section>

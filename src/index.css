@@ -16,9 +16,54 @@
 }
 
 .avatar {
-  background-image: url("https://cdn.launchaco.com/images/50939c2b-e504-4a3d-bcf9-66a526d7d91c.jpg");
+  background-image: url("/static/50939c2b-e504-4a3d-bcf9-66a526d7d91c.jpg");
 }
 
 .pd20 {
   padding: 30px;
+}
+
+.fade-enter {
+  opacity: 0.01;
+}
+
+.fade-enter.fade-enter-active {
+  opacity: 1;
+  transition: opacity 300ms ease-in;
+}
+
+.fade-exit {
+  opacity: 1;
+}
+
+.fade-exit.fade-exit-active {
+  opacity: 0.01;
+  transition: opacity 300ms ease-in;
+}
+
+div.transition-group {
+  position: relative;
+}
+
+section.route-section {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+.heading-lrg small {
+  display: block;
+  font-size: 16px;
+  font-weight: normal;
+}
+
+.heading-lrg small::before {
+  content: '(';
+  margin-right: 2px;
+}
+
+.heading-lrg small::after {
+  content: ')';
+  margin-left: 2px;
 }

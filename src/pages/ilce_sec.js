@@ -74,11 +74,13 @@ export default class IlceSec extends React.Component {
                   placeholder="Ara.."
                 />
               </li>
-              <RegionList
-                regions={this.state.regions}
-                query={this.state.query}
-                selectRegion={this.selectRegion}
-              />
+              <div className="cities-inner">
+                <RegionList
+                  regions={this.state.regions}
+                  query={this.state.query}
+                  selectRegion={this.selectRegion}
+                />
+              </div>
             </ul>
           </div>
         </section>
