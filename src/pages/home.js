@@ -267,10 +267,9 @@ export default class Home extends React.Component {
                 <div className="user-image mb20 avatar" />
                 <div>
                   <b className="bold primary-color">Akın Özgen</b>
-                  <p className="paragraph primary-color mt10">Tek Tabanca</p>
+                  <p className="paragraph primary-color mt10">Front-End Developer (Antalya)</p>
                   <p className="paragraph secondary-color mt20">
-                    Çoğul konuştuğuma bakmayın. Resmi görünsün diye çabaladım.
-                    Şizofren değilim.
+                  8 yıllık kod yazıcısı 2 yıldır profesyonel yazılım geliştiricisi. Yüksek okul mezunu, askerliği kısaltmak için açık öğretim öğrencisi Şimdilik bu kadar
                   </p>
                 </div>
                 <div className="mt30">
