@@ -67,3 +67,16 @@ section.route-section {
   content: ')';
   margin-left: 2px;
 }
+
+.logotype {
+  position: relative;
+  padding-right: 49px;
+}
+
+.logotype-x {
+  font-family: Alba;
+  font-size: 59px;
+  position: absolute;
+  right: 32.5px;
+  top: -16px;
+}

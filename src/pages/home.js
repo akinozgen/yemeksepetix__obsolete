@@ -12,8 +12,11 @@ export default class Home extends React.Component {
             <div className="container mb40">
               <div className="col-12 text-center">
                 <h1 className="heading-lrg primary-color launchaco-builder-hoverable">
-                  <span className="branding-name"> yemekX </span> sizi seçmekle
-                  uğraştırmaz.
+                  <span className="branding-name logotype">
+                    yemek
+                    <sup className="logotype-x">x</sup>
+                  </span>
+                  sizi seçmekle uğraştırmaz.
                 </h1>
                 <h2 className="subheading secondary-color mt20 launchaco-builder-hoverable">
                   Rastgele bir yemek öneri zinciri ile yemek seçme sürecini
